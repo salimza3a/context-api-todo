@@ -1,10 +1,12 @@
 import { Fragment } from "react";
-import ToDoItem from "./ToDoItem";
-
+import Todo from "./ToDo";
+import ToDoProvider from "./ToDoProvider";
 function App() {
   return (
     <Fragment>
-      <ToDoItem />
+      <ToDoProvider>
+        <Todo />
+      </ToDoProvider>
     </Fragment>
   );
 }
